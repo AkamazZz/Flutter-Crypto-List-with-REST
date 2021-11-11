@@ -45,15 +45,15 @@ class _HomeState extends State<Home> {
                 ),
                 child: Row(
                   children: [
-                    Container(
-                      height: 75,
-                      width: 75,
-                      child: Padding(
+                    Padding(
                         padding: const EdgeInsets.all(10),
-                        child: Image.network(
-                            'https://upload.wikimedia.org/wikipedia/commons/8/8d/Antu_bitcoin-qt.svg'),
-                      ),
-                    )
+                        child: Container(
+                            height: 75,
+                            width: 75,
+                            child: Padding(
+                                padding: const EdgeInsets.all(10),
+                                child: Image.network(
+                                    'https://upload.wikimedia.org/wikipedia/commons/8/8d/Antu_bitcoin-qt.svg'))))
                   ],
                 )),
           )
