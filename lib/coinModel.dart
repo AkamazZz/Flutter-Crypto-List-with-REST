@@ -4,12 +4,13 @@ import 'package:flutter/material.dart';
 
 class Coin {
   Coin(
-      {@required this.name,
-      @required this.symbol,
-      @required this.imageUrl,
-      @required this.price,
-      @required this.change,
-      @required this.changePercentage});
+      // model itself
+      {required this.name,
+      required this.symbol,
+      required this.imageUrl,
+      required this.price,
+      required this.change,
+      required this.changePercentage});
 
   String name;
   String symbol;
@@ -19,6 +20,7 @@ class Coin {
   num changePercentage;
 
   factory Coin.fromJson(Map<String, dynamic> json) {
+    // going to take from CoinGeckos' API information about coins
     return Coin(
         name: json['name'],
         symbol: json['symbol'],

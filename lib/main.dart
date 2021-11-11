@@ -46,14 +46,61 @@ class _HomeState extends State<Home> {
                 child: Row(
                   children: [
                     Padding(
-                        padding: const EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
+                      child: Container(
+                        height: 75,
+                        width: 75,
+                        child: Padding(
+                          padding: const EdgeInsets.all(10),
+                          child: Image.network(
+                              'https://upload.wikimedia.org/wikipedia/commons/8/8d/Antu_bitcoin-qt.svg'),
+                        ),
+                      ),
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Bitcoin',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 27,
+                              fontWeight: FontWeight.bold,
+                            )),
+                        Text('btc',
+                            style: TextStyle(
+                              color: Colors.white54,
+                              fontSize: 20,
+                            )),
+                      ],
+                    ),
+                    Expanded(
                         child: Container(
-                            height: 75,
-                            width: 75,
-                            child: Padding(
-                                padding: const EdgeInsets.all(10),
-                                child: Image.network(
-                                    'https://upload.wikimedia.org/wikipedia/commons/8/8d/Antu_bitcoin-qt.svg'))))
+                            padding: const EdgeInsets.all(15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Text('67000',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 25,
+                                      fontWeight: FontWeight.bold,
+                                    )),
+                                Text(
+                                  '-2%',
+                                  style: TextStyle(
+                                    color: Colors.white54,
+                                    fontSize: 18,
+                                  ),
+                                ),
+                                Text('3.6',
+                                    style: TextStyle(
+                                      color: Colors.white54,
+                                      fontSize: 17,
+                                    ))
+                              ],
+                            )))
                   ],
                 )),
           )
