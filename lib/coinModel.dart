@@ -30,3 +30,5 @@ class Coin {
         changePercentage: json['price_change_percentage_24h']);
   }
 }
+
+List<Coin> coinList = [];
